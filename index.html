@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logoAPI.jpg" type="image/icon-x">
+    <title>Consumindo API</title>
+
+    <style>
+        :root {
+
+            --thColor: yellowgreen;
+            --tbody: rgb(226, 188, 17);
+            --h1: white;
+            --table: rgb(196, 172, 22);
+            --tdHover: rgb(122, 193, 244);
+
+
+
+
+
+        }
+
+        table {
+
+            margin: 2rem 30rem 5rem 52rem;
+            border-color: var(--table);
+            border-radius: 0.9rem;
+            border-collapse: collapse;
+            border-style: double;
+            border-width: 0.7rem;
+            border-radius: 0.4rem;
+
+
+        }
+
+        h1 {
+            margin-top: 10rem;
+            margin-left: 43rem;
+            font-weight: 35rem;
+            font-size: 3.5rem;
+            text-align: center;
+            background-color: var(--h1);
+
+        }
+
+        body {
+
+            background-image: url('./images/imagemAPI.jpg');
+            background-size: cover;
+
+        }
+
+
+        div {
+            padding-left: 0.5rem;
+            margin-right: 35rem;
+            border-radius: 1rem;
+
+        }
+
+        tbody {
+
+
+            background-color: var(--tbody);
+        }
+
+        tr {
+
+            text-size-adjust: 1rem;
+        }
+
+        td {
+
+            font-size: 1rem;
+        }
+
+        td:hover {
+            background-color: var(--tdHover);
+        }
+
+        th {
+            background-color: var(--thColor);
+
+        }
+
+        .personas {
+            width: 15rem;
+            border-radius: 1rem;
+            margin-left: 55rem;
+
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div>
+        <h1> User Personal Data </h1>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Mail</th>
+                <th>Photo</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <footer>
+        <div>
+            <img class=" personas" src="./images/imagem_api.jpg" alt="personas">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
